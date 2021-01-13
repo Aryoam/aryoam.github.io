@@ -1,0 +1,493 @@
+html {
+    font-size: 62.5%; /* Reset para rems, 62.5% es igual a 10px de 16px, esto hace que 10px sean 1rem, 100px 10rem... */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10rem;
+    color: #0099db;
+    line-height: 4rem;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.ocultar-importante {
+    opacity: 0;
+}
+
+
+.btn {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    background-color: #0099db;
+    border-radius: 3rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+    box-shadow: 0px 2px 70px 0px rgba(110,130,208,0.18)
+}
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.header {
+    background-image: url(../imagenes/KOL-ILA-Workspace.jpg);
+    height: 75rem;
+    background-size: cover;
+    background-position: center center;
+    min-height: 60rem;
+}
+
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.contenedor2 {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.imagen-header {
+    font-size: 1rem;
+    width: 25rem;
+    transition: all .5s ease;
+}
+
+.barra {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.logo-fijo {
+    width: 15rem!important;
+    transition: all .5s ease;
+}
+
+.barra nav a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #0099db;
+    padding-bottom: 1rem;
+}
+
+nav a:hover:last-of-type {
+    border-bottom: none;
+}
+
+.navegacion {
+    display: grid;
+    text-align: center;
+    grid-gap: 2rem;
+}
+
+.barra nav a:last-of-type {
+    margin: 0;
+}
+
+.logo-normal {
+    width: 25rem;
+    padding: 1rem;
+}
+
+.texto-header {
+    margin-top: 15rem;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem 3rem;
+        -webkit-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+        -moz-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+        box-shadow: 0px 2px 10px 0px rgba(110,130,208,0.18)
+    }
+
+    .navegacion {
+        display: block;
+    }
+
+    .navegacion a:last-of-type {
+        background-color: #0099db;
+        padding: 1rem 2rem;
+        border-radius: .7rem;
+        color:#ffffff
+    }
+    .navegacion i {
+        margin-left: .7rem;
+        font-size: 1.8rem;
+    }
+}
+
+.header h1 {
+    color: white;
+    padding-bottom: 3rem;
+    max-width: 60rem; 
+    line-height: 5rem;
+}
+
+.header p {
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 3rem;
+    max-width: 60rem; 
+    margin: 5rem 0;
+}
+
+.alineacion-header {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+
+
+/** SECCION SERVICIOS **/
+
+
+@media (min-width: 768px) {
+    .seccion-servicio {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        align-items: center;
+        position: relative;
+    }
+
+    .seccion-servicios {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 3rem;
+        text-align: center;
+        max-width: 30rem;
+        grid-column: 2 / 3;
+        margin-top: 0;
+    }
+}
+
+
+.seccion-servicios {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 3rem;
+    text-align: center;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+    .imagen-servicios {
+        position: absolute;
+        max-width: 70%;
+        z-index: 0;
+    }
+}
+
+
+.servicio {
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+    box-shadow: 0px 2px 70px 0px rgba(110,130,208,0.18)
+    border-radius: .5rem;
+    padding: 4rem 4rem;
+}
+
+.seccion-servicios i {
+    color: #0099db;
+    font-size: 5rem;
+}
+
+/** CURSOS **/
+
+.detalle-curso p {
+    display: none;
+}
+
+.capacitacion h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+    color: #0099db;
+}
+
+.parrafo-capacitacion {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+
+.detalle-curso {
+    border: 1px solid #e1e1e1;
+    padding: 3rem;
+    transition: all .3s ease;
+    margin-bottom: 3rem;
+    max-width:80%;
+    margin:  3rem auto;
+}
+
+@media (min-width: 768px) {
+    .detalle-curso p {
+        display: block;
+    }
+
+    .info-curso {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5rem;
+    }
+
+    .detalle-curso {
+        max-width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+
+.detalle-curso:hover {
+    transform: scale(1.05);
+    border: 1px solid #e1e1e1;
+    box-shadow: 0px 0px 5rem #e1e1e1;
+}
+
+.detalle-curso h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.detalle-curso a {
+    background-color: #0099db;
+    display: block;
+    text-align: center;
+}
+
+.pagina-curso {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.pagina-curso a {
+    font-size: 4rem;
+    color: #0099db;
+}
+
+.pagina-curso p {
+    font-size: 1.5rem;
+    margin:0 2rem;
+}
+
+.ocultar {
+    display: none;
+}
+
+
+/** PORTAFOLIOS **/
+
+.portafolio h2 {
+    margin-bottom: 10rem;
+}
+
+.lista-clientes{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.lista-clientes li img {
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease;
+}
+
+@media (min-width: 768px) {
+    .lista-clientes li{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .lista-clientes li img {
+        height: 30rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .lista-clientes li{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+}
+
+.cliente {
+    position: relative;
+    overflow: hidden;
+}
+
+.cliente p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem 1rem;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .55);
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.cliente img:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+}
+
+
+/** NUESTROS CLIENTES **/
+
+.nuestros-clientes {
+    background-color: #f5f5f5;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.nuestros-clientes p {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.grid-clientes {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+/** EJEMPLO CURSO **/
+
+.ejemplo-curso img {
+    text-align: right;
+    width: 100%;
+}
+
+.contenido-ejemplo {
+    text-align: center;
+}
+
+.contenido-ejemplo p {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 7rem;
+}
+
+@media (min-width: 768px) {
+    .ejemplo-curso {
+        margin-top: 10rem;
+        display: grid;
+        grid-template-columns: 30% 70%;
+    }
+}
+
+.ejemplo-curso .btn {
+    background-color: #0099db;
+    border-radius: .5rem;
+    padding: 2rem 5rem;
+    font-weight: bold;
+}
+
+
+/** OPINIONES DE ESTUDIANTES **/
+
+.testimonial {
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+    -moz-box-shadow: 0px 0px 26px -2px rgba(110,130,208,0.18);
+    box-shadow: 0px 2px 70px 0px rgba(110,130,208,0.18)
+}
+
+.fondo-opiniones {
+    margin-top: 8rem;
+}
+
+@media (min-width: 768px) {
+    .fondo-opiniones {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .testimonial {
+        margin-bottom: 0;
+    }
+}
+
+.testimonial img {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.info-testimonial {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.info-testimonial cite {
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.info-testimonial span {
+    display: block;
+    font-weight: normal;
+}
+
